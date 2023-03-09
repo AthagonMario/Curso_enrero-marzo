@@ -9,18 +9,10 @@ public class Personaje2D : MonoBehaviour
     AudioSource audioSource;
     Vector3 movimiento = Vector3.zero;
     Animator anim;
-
-    public void animacionSuelo()
-    {
-        anim.SetBool("Suelo", true);
-        fuerzaGravedad = 1f;
-    }
-
-    [SerializeField]float direccionHorizontal;
+    [SerializeField] float direccionHorizontal;
     [SerializeField] float velocidad = 3f;
     [SerializeField] float gravedad = 9f;
     [SerializeField] float salto = 2f;
-    
     float fuerzaGravedad = 0f;
     float duracionSalto = 0f;
 
@@ -42,10 +34,6 @@ public class Personaje2D : MonoBehaviour
         //Mover en direccion horizontal (eje x) con flechas o letras A y D
         direccionHorizontal = Input.GetAxis("Horizontal");
         
-        //if (direccionHorizontal == 0f)
-        //{
-        //    anim.transform.rotation = Quaternion.AngleAxis(180, Vector3.up); //Cuando esta quieto mira al frente
-        //}
         if (direccionHorizontal > 0f)
         {
             anim.transform.rotation = Quaternion.AngleAxis(90, Vector3.up); //Cuando va a la derecha rota 90
@@ -97,6 +85,12 @@ public class Personaje2D : MonoBehaviour
         duracionSalto = 0;
         ReproducirSonido();
         
+    }
+
+    public void animacionSuelo()
+    {
+        anim.SetBool("Suelo", true);
+        fuerzaGravedad = 1f;
     }
 
     private void ReproducirSonido()
