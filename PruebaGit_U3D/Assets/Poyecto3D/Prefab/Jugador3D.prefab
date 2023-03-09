@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 43e54faa1e1196e47969627294aeb3ce, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -110,8 +110,7 @@ GameObject:
   - component: {fileID: 7505687129057182785}
   - component: {fileID: 7505687129057182784}
   - component: {fileID: 7505687129057182789}
-  - component: {fileID: 7505687129057182788}
-  - component: {fileID: 7505687129057182790}
+  - component: {fileID: -5483765890944338398}
   m_Layer: 0
   m_Name: Jugador3D
   m_TagString: Player
@@ -127,7 +126,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7505687129057182799}
   m_LocalRotation: {x: -0, y: -0.6960958, z: -0, w: 0.717949}
-  m_LocalPosition: {x: -9.38, y: 6.3, z: 0.54414415}
+  m_LocalPosition: {x: 0.33, y: 6.3, z: 0.54414415}
   m_LocalScale: {x: 1.053, y: 1.053, z: 1.053}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -163,7 +162,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 11dfe35717cc90d4d949c79e0a5c909c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -217,7 +216,7 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7505687129057182788
+--- !u!114 &-5483765890944338398
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -226,23 +225,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7505687129057182799}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7389b3b94fa4a7a45964b19e8d5e7ca1, type: 3}
+  m_Script: {fileID: 11500000, guid: 1df11611555588c4792bff899d32d1ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   gravedad: 45
   FuerzaSalto: 4
-  velocidad: 5
+  velocidad: 45
   Giro: 45
---- !u!114 &7505687129057182790
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7505687129057182799}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d54b39bd935ef62418b845fa1e124deb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidad: 5
