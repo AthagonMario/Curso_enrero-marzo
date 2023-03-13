@@ -22,7 +22,6 @@ public class EnemigoVolador2 : MonoBehaviour
     void Update()
     {
         float x = Mathf.PingPong(Time.time * velocidad, limiteX * 2) - limiteX;
-        //movimientoOscilacion.y = Mathf.Sin(Time.time * 2) * 0.1f;
         movimientoOscilacion.y = Mathf.Sin(Time.time * 2) * 0.01f;
         transform.position = new Vector3(x, transform.position.y, transform.position.z) + movimientoOscilacion;
 

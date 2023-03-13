@@ -22,7 +22,7 @@ public class SaludPlayer : MonoBehaviour
     public void HazDanio(int cantidadDanio)
     {
         saludActual -= cantidadDanio;
-        Debug.Log(saludActual);
+        Debug.Log("SALUD: " + saludActual);
         if (saludActual <= 0)
         {
             PersonajeMuere();
