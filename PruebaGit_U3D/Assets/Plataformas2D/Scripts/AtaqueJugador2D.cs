@@ -7,12 +7,11 @@ public class AtaqueJugador2D : MonoBehaviour
 {
     void Start()
     {
-        Debug.Log("Hola");
+
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Collider");
         if (other.gameObject.tag == "Arma2DProyecto")
         {
             Debug.Log("Tocado");
