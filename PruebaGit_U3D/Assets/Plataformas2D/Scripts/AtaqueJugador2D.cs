@@ -1,18 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AtaqueJugador2D : MonoBehaviour
 {
-    // Start is called before the first frame update
     void Start()
     {
-        
+        Debug.Log("Hola");
     }
 
-    // Update is called once per frame
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("Collider");
+        if (other.gameObject.tag == "Arma2DProyecto")
+        {
+            Debug.Log("Tocado");
+        }
+    }
+
     void Update()
     {
-        
+      
     }
 }

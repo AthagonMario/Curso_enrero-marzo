@@ -4,8 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Arma
   - Jugador2D
+  - Arma2DProyecto
   layers:
   - Default
   - TransparentFX
