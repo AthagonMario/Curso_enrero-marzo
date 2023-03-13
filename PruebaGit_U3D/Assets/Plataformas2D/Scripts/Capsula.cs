@@ -12,6 +12,8 @@ public class Capsula : MonoBehaviour
     [SerializeField] float salto = 2f;
     float fuerzaGravedad = 0f;
     float duracionSalto = 0f;
+    
+    
 
     void Start()
     {
@@ -59,4 +61,5 @@ public class Capsula : MonoBehaviour
         
     }
 
+    
 }
