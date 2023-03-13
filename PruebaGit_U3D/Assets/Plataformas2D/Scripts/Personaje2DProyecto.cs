@@ -12,8 +12,8 @@ public class Personaje2DProyecto : MonoBehaviour
     [SerializeField] float direccionHorizontal;
     [SerializeField] float direccionVertical;
     Vector3 movimiento = Vector3.zero;
-    [SerializeField] float velocidad = 1;
-    [SerializeField] float gravedad = 1;
+    [SerializeField] float velocidad = 5f;
+    [SerializeField] float gravedad = 10f;
     [SerializeField] float salto = 4f;
 
     //Animator anim = null;
