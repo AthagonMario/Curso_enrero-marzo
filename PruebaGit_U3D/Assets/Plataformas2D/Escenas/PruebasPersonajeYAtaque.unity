@@ -280,7 +280,7 @@ GameObject:
   - component: {fileID: 1579861892}
   m_Layer: 0
   m_Name: TestEspada
-  m_TagString: Untagged
+  m_TagString: Arma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -378,7 +378,7 @@ GameObject:
   - component: {fileID: 1822850041}
   m_Layer: 0
   m_Name: PersonajeTest
-  m_TagString: Untagged
+  m_TagString: Jugador2D
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
